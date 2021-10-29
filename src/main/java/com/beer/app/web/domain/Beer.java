@@ -8,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.persistence.Version;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -27,6 +28,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table
 public class Beer {
 
     @Id

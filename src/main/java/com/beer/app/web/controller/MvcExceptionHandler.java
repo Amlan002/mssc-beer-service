@@ -1,4 +1,4 @@
-package com.beer.app.controller;
+package com.beer.app.web.controller;
 
 import java.util.ArrayList;
 import java.util.List;

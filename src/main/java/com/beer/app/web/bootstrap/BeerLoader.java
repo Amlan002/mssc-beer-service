@@ -12,12 +12,12 @@ import com.beer.app.web.repository.BeerRepository;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-//@Component
+@Component
 public class BeerLoader implements CommandLineRunner {
 
-    public static final String BEER_1_UPC = "0631234200036";
-    public static final String BEER_2_UPC = "0631234300019";
-    public static final String BEER_3_UPC = "0083783375213";
+    public static final String BEER_1_UPC = "06312342000361";
+    public static final String BEER_2_UPC = "06312343000192";
+    public static final String BEER_3_UPC = "00837833752133";
 
     private final BeerRepository beerRepository;
 
@@ -31,28 +31,28 @@ public class BeerLoader implements CommandLineRunner {
 
     private void loadBeerObjects() {
         Beer b1 = Beer.builder()
-                .beerName("Mango Bobs")
+                .beerName("Corona")
                 .beerStyle(BeerStyleEnum.IPA.name())
-                .minOnHand(12)
-                .quantityToBrew(200)
+                .minOnHand(121)
+                .quantityToBrew(2001)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_1_UPC)
                 .build();
 
         Beer b2 = Beer.builder()
-                .beerName("Galaxy Cat")
+                .beerName("Kingfisher")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
-                .minOnHand(12)
-                .quantityToBrew(200)
+                .minOnHand(122)
+                .quantityToBrew(2002)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_2_UPC)
                 .build();
 
         Beer b3 = Beer.builder()
-                .beerName("Pinball Porter")
+                .beerName("Budb")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
-                .minOnHand(12)
-                .quantityToBrew(200)
+                .minOnHand(123)
+                .quantityToBrew(2003)
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_3_UPC)
                 .build();
